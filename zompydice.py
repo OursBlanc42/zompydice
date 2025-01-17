@@ -8,14 +8,27 @@ Created on Fri Jan 17 10:21:23 2025
 
 import random
 
-
 # Dice definition
-green = ['Brain', 'Brain', 'Brain', 'Step', 'Step', 'Bite']
-yellow = ['Brain', 'Brain', 'Step', 'Step', 'Bite', 'Bite']
-red = ['Brain', 'Step', 'Step', 'Bite', 'Bite', 'Bite']
+green = ('Green', ['Brain', 'Brain', 'Brain', 'Step', 'Step', 'Bite'])
+yellow = ('Yellow', ['Brain', 'Brain', 'Step', 'Step', 'Bite', 'Bite'])
+red = ('Red', ['Brain', 'Step', 'Step', 'Bite', 'Bite', 'Bite'])
 
+# Dice bag generation
 dice_bag = [green, green, green, yellow, yellow, red]
 
 random.shuffle(dice_bag)
 
-print("Dice bage shuffling : ", dice_bag)
+# Pick a random dice
+picked_dice = random.choice(dice_bag)
+
+# Extract the name and faces
+dice_color, dice_face = picked_dice
+
+picked_face = random.choice(dice_face)
+
+print(f"I'm shuffling the dice bag and picked a {dice_color} die with these faces:")
+for item in dice_face:
+    print(item, end=", ")
+
+print(f"\n\nI'm shuffling this {dice_color} die and picked this face: {picked_face}")
+
