@@ -12,10 +12,13 @@ import sys
 import zompydice
 
 # Menu
-menu_choice = input("Do you want to roll dice ? Yes / No ")
-if menu_choice == "yes":
-    zompydice.roll_dice()
-else:
-    print("Exiting")
-    sys.exit(0)
-
+while True:
+    menu_choice = input("Do you want to roll dice? Yes / No: ").strip().lower()
+    
+    if menu_choice == "yes":
+        zompydice.roll_dice()
+    elif menu_choice == "no":
+        print("Exiting.")
+        sys.exit(0)
+    else:
+        print("Invalid input. Please answer 'yes' or 'no'.")
