@@ -13,7 +13,7 @@ import zompydice
 
 # Menu
 while True:
-    menu_choice = input("Do you want to roll dice? Yes / No: ").strip().lower()
+    menu_choice = input("Do you want to play ? Yes / No: ").strip().lower()
     
     if menu_choice == "yes":
         zompydice.roll_dice()
