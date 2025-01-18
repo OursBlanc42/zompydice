@@ -18,8 +18,8 @@ Function to debug
 switch the comment from pass to print to ignore the debug
 """
 def debug(message):
-    print(f"\t[DEBUG]\t{message}")
-    # pass
+    # print(f"\t[DEBUG]\t{message}")
+    pass
 
 def generate_dice_bag():
     
@@ -67,7 +67,7 @@ def roll_dice(keep_dice,score,hp):
         # Store the result
         draw.append(picked_dice)
         
-        # Delete the dice from the list dice_bag
+        # Remove the dice from the list dice_bag
         dice_bag.remove(picked_dice)
         
         debug("PICK A DIE FROM BAG AND STORE IN THE DRAW")
