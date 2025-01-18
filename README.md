@@ -75,8 +75,10 @@ The color of the dice determines how risky it is to roll them, adding a strategi
 
 
 ## ** Handmade with love with... **
-- Python 3.10.12
-- Spyder6
+- Python    3.10.12
+- Spyder6   6.0.3 (standalone)
+- VScode    1.96.0
+- Flake8    2023.10.0
 - Linux Mint 21.3 x86_64 / Kernel: 5.15.0-130-generic 
 
 ## **License**  
