@@ -47,7 +47,7 @@ This project was started during my training, so I'm still learning, and some par
    ```
 3. Run the game:  
    ```bash
-   python3 main.py
+   python3 menu.py
    ```
 
 ## **Quick rules*

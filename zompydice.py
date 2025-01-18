@@ -138,6 +138,6 @@ def roll_dice(keep_dice,score,hp):
 
 
 if __name__ == "__main__":
-    print("Please run from main.py")
+    print("Please run from menu.py")
     sys.exit(0)
     
