@@ -10,7 +10,7 @@ A Python rewrite of the Zombiedice tabletop game.
 4. [Installation](#installation)  
 5. [Quick Rules](#quick-rules)  
 6. [About Dice](#about-dice)  
-7. [Handmade with love using...](#handmade-with-love-using)  
+7. [Handmade with love with...](#handmade-with-love-with)
 8. [License](#license)  
 9. [Contributing](#contributing)  
 10. [Contact](#contact)
@@ -50,7 +50,7 @@ This project was started during my training, so I'm still learning, and some par
    python3 menu.py
    ```
 
-## **Quick rules*
+## **Quick rules**
 - **Objective:** Survive the zombie apocalypse by collecting as many 🧠 (brains) as possible without losing all your ❤️ (HP).
 - **Gameplay:**
   1. Roll 3 dice per turn.
@@ -64,7 +64,7 @@ This project was started during my training, so I'm still learning, and some par
 - **Lose condition:**
   - Lose all your ❤️, and the zombies win! 🧟‍♂️
 
-## **About Dice** 🎲  
+## **About Dice**
 There are three types of dice in the game, each with different probabilities:
 
 - **Green Dice (x6):** 🧠 🧠 🧠 👣 👣 💥 — The safest dice with more brains.
@@ -74,7 +74,7 @@ There are three types of dice in the game, each with different probabilities:
 The color of the dice determines how risky it is to roll them, adding a strategic element to the game.
 
 
-## ** Handmade with love with... **
+## **Handmade with love with...**
 - Python    3.10.12
 - Spyder6   6.0.3 (standalone)
 - VScode    1.96.0
