@@ -16,7 +16,7 @@ while True:
     menu_choice = input("Do you want to play ? Yes / No: ").strip().lower()
     
     if menu_choice == "yes":
-        zompydice.roll_dice()
+        zompydice.roll_dice([])
     elif menu_choice == "no":
         print("Exiting the game. Goodbye !")
         sys.exit(0)
