@@ -13,6 +13,14 @@ import random
 # declare global variable
 dice_bag = []
 
+"""
+Function to debug
+switch the comment from pass to print to ignore the debug
+"""
+def debug(message):
+    # print(f"\t[DEBUG]\t{message}")
+    pass
+
 def generate_dice_bag():
     
     # Dice definition
@@ -35,11 +43,17 @@ def roll_dice(keep_dice):
     # Add kept dice to the draw
     draw.extend(keep_dice)    
     
+    debug("Kept dice".ljust(30) + f"keep_dice = {[dice[0] for dice in keep_dice]}")
+    debug("Dice added to draw".ljust(30) + f"draw = {[dice[0] for dice in draw]}")
+    debug("Draw size before refill".ljust(30) + f"len(draw) = {len(draw)}")
+
+    
     # While we dont draw 3 dices...
     while len(draw) < 3:
+        
         # Check if bag is empty
         if len(dice_bag) == 0:
-            print("\nRegenerating the bag...")
+            print("\nGenerating the bag...")
             dice_bag = generate_dice_bag()
         
         # Shuffling bag
@@ -53,6 +67,16 @@ def roll_dice(keep_dice):
         
         # Delete the dice from the list dice_bag
         dice_bag.remove(picked_dice)
+        
+        debug("PICK A DICE FROM BAG AND STORE IN THE DRAW")
+        debug("Dice picked".ljust(30) + f"picked_dice = {picked_dice[0]}")
+        debug("Dice bag content".ljust(30) + f"dice_bag = {[dice[0] for dice in dice_bag]}")
+        debug("Dice in dice bag".ljust(30) + f"len(dice_bag) = {len(dice_bag)}")
+        debug("Draw content".ljust(30) + f"draw = {[dice[0] for dice in draw]}")
+        debug("Dice in draw".ljust(30) + f"len(draw) = {len(draw)}")
+        
+    # Reset keep_dice after draw completion
+    keep_dice = []
         
     print("\nYou drew the following dice :")
     for dice in draw:
@@ -81,7 +105,7 @@ def roll_dice(keep_dice):
                     keep_dice.append(draw[index])
             
             if len(keep_dice) > 0:
-                print("\n You keep the following 'Step' dice to reroll:")
+                print("\nYou keep the following 'Step' dice to reroll:")
                 for dice in keep_dice:
                     print(f"- {dice[0]}")
                     
